@@ -1,3 +1,35 @@
-<h1>Welcome to the finance tracker app</h1>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+ 
+<div class="jumbotron text-center">
+<h1>Wellcome to Dev Match</h1>
+<h3>A membership site where enterence can meet developer</h3>
+</div>
+
+<div class="row">
+    
+    <div class="col-md-6">
+        <div class="well">
+    <h2 class="text-center">Basic Membership</h2>
+    <h4>Sign up for free and get basic access to the community.</h4>
+    <br>
+    <%= link_to "Sign up with Basic", new_user_registration_path, class: 'btn btn-primary btn-lg btn-block' %>
+    </div>
+    </div>
+     <div class="col-md-6">
+         <div class="well">
+    <h2 class="text-center">Pro Membership</h2>
+    <h4>Sign up for the pro account for 10/month and get access to the community and contact information</h4>
+    <%= link_to "Sign up with Pro", new_user_registration_path, class: 'btn btn-success btn-lg btn-block' %>
+    </div>
+     </div>
+</div>
+
+
+
+
+
 
 <%= link_to "logout", destroy_user_session_path, method: :delete %>
